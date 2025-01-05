@@ -1,17 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import DateCounter from './DateCounter'
+import CreateCustomer from "./CreateCustomer";
+import Customer from "./Customer";
+import AccountOperations from "./AccountOperations";
+import BalanceDisplay from "./BalanceDisplay";
 
 function App() {
-  
-
   return (
-    <>
-     <DateCounter />
-    </>
-  )
+    <div>
+      <h1>🏦 The React-Redux Bank ⚛️</h1>
+      <CreateCustomer />
+      <Customer />
+      <AccountOperations />
+      <BalanceDisplay />
+    </div>
+  );
 }
 
-export default App
+export default App;
